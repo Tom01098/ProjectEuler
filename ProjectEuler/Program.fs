@@ -2,7 +2,12 @@
 
 open System
 
+let RunProblem f n =
+    printfn "Problem %i: %i" n f
+
 [<EntryPoint>]
 let main argv =
-    printfn "Hello World from F#!"
-    0 // return an integer exit code
+    RunProblem Problem1.Run 1
+    RunProblem Problem2.Run 2
+    Console.ReadKey() |> ignore
+    0
