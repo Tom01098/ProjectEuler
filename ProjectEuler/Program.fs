@@ -2,12 +2,10 @@
 
 open System
 
-let RunProblem f n =
-    printfn "Problem %i: %i" n f
-
 [<EntryPoint>]
 let main argv =
-    RunProblem Problem1.Run 1
-    RunProblem Problem2.Run 2
+    printfn "Problem #1: %i" Problem1.Run
+    printfn "Problem #2: %i" Problem2.Run
+    printfn "Problem #3: %i" Problem3.Run 
     Console.ReadKey() |> ignore
     0
