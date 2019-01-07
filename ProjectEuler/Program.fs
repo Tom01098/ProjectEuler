@@ -6,6 +6,7 @@ open System
 let main argv =
     printfn "Problem #1: %i" Problem1.Run
     printfn "Problem #2: %i" Problem2.Run
-    printfn "Problem #3: %i" Problem3.Run 
+    printfn "Problem #3: %i" Problem3.Run
+    printfn "Problem #6: %i" Problem6.Run
     Console.ReadKey() |> ignore
     0
